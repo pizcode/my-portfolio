@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Sriracha";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Sriracha-Regular.ttf");
+  }
+
+  body {
+    @apply font-mono bg-background text-foreground scroll-smooth antialiased;
+  }
+
+  .bg-background {
+    @apply bg-neutral-50 dark:bg-neutral-950;
+  }
+
+  .bg-foreground {
+    @apply bg-neutral-950 dark:bg-neutral-50;
+  }
+
+  .text-foreground {
+    @apply text-neutral-950 dark:text-neutral-50;
+  }
+
+  .text-background {
+    @apply text-neutral-50 dark:text-neutral-950;
+  }
+
+  .bg-element {
+    @apply bg-neutral-200 dark:bg-neutral-800 hover:bg-neutral-300 dark:hover:bg-neutral-700;
+  }
+}
