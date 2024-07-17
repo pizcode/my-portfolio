@@ -1,8 +1,7 @@
 import { links } from "../data";
 
 export default function SocialLinks() {
-  const resumeLink =
-    "https://drive.google.com/file/d/1oOx0eZnNIMJng0-CD9ao_pHc07I7wJP0/view?usp=sharing";
+  const resumeLink = "./web-developer-priyank-resume.pdf";
   return (
     <section className="flex flex-wrap justify-center sm:justify-between items-center gap-10 mx-auto mt-24">
       <div className="bg-gradient-to-r from-yellow-400 to-green-500 p-0.5 rounded-md">
