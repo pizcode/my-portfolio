@@ -4,7 +4,7 @@ export default function SocialLinks() {
   const resumeLink = "./web-developer-priyank-resume.pdf";
   return (
     <section className="flex flex-wrap justify-center sm:justify-between items-center gap-10 mx-auto mt-24">
-      <div className="bg-gradient-to-r from-yellow-400 to-green-500 p-0.5 rounded-md">
+      <div className="bg-gradient-to-r hover:bg-gradient-to-l from-yellow-400 to-green-500 p-0.5 rounded-md">
         <a
           className="inline-block bg-background p-3 rounded-md font-medium text-base"
           href={resumeLink}

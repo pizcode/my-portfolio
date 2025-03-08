@@ -54,7 +54,7 @@ export const skills = [
   "Vue",
   "React",
   "Bootstrap",
-  "TailwindCSS",
+  "Tailwind CSS",
   "Material UI",
   "AWS",
   "GIT",

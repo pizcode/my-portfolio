@@ -6,7 +6,7 @@ import SocialLinks from "./components/SocialLinks";
 
 function App() {
   return (
-    <main className="mx-auto px-5 sm:p-0 container">
+    <main className="mx-auto sm:p-0 px-5 container">
       <Hero />
 
       <Skills />

@@ -10,8 +10,26 @@
     src: url("./fonts/Sriracha-Regular.ttf");
   }
 
+  @keyframes gradientAnimation {
+    0% {
+      background-size: 150%;
+    }
+    100% {
+      background-size: 100%;
+    }
+  }
+
+  .bg-animated {
+    animation: gradientAnimation 1.5s ease-in-out;
+  }
+
   body {
-    @apply font-mono bg-background text-foreground scroll-smooth antialiased;
+    @apply font-mono bg-background text-foreground scroll-smooth antialiased bg-no-repeat;
+  }
+
+  body {
+    @apply bg-[radial-gradient(circle_at_top_right,rgb(217,217,217)_0%,rgb(217,217,217)_1%,rgb(222,222,222)_1%,rgb(222,222,222)_10%,rgb(226,226,226)_10%,rgb(226,226,226)_22%,rgb(230,230,230)_22%,rgb(230,230,230)_23%,rgb(235,235,235)_23%,rgb(235,235,235)28%,rgb(241,241,241)28%,rgb(241,241,241)_37%,rgb(245,245,245)_37%,rgb(245,245,245)_100%)];
+    @apply dark:bg-[radial-gradient(circle_at_top_right,rgb(58,58,58)_0%,rgb(58,58,58)_1%,rgb(52,52,52)_1%,rgb(52,52,52)_10%,rgb(45,45,45)_10%,rgb(45,45,45)_22%,rgb(39,39,39)_22%,rgb(39,39,39)_23%,rgb(33,33,33)_23%,rgb(33,33,33)_28%,rgb(26,26,26)_28%,rgb(26,26,26)_37%,rgb(20,20,20)_37%,rgb(20,20,20)_100%)];
   }
 
   .bg-background {
@@ -31,6 +49,6 @@
   }
 
   .bg-element {
-    @apply bg-neutral-200 dark:bg-neutral-800 hover:bg-neutral-300 dark:hover:bg-neutral-700;
+    @apply bg-neutral-950/5 dark:bg-neutral-50/5 hover:bg-neutral-300 dark:hover:bg-neutral-700;
   }
 }
